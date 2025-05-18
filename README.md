@@ -2,6 +2,7 @@
 Cowry Data Analytics Assessment
 
 # 1. High-Value Customers with Multiple Products
+![Q1](Images/Assessment_Q1.sql.png)
 Query Explanation:
 
 1. The Common Table Expression (CTE) "CustomerPlans" created using the 'With Clause' creates a temporary result set that:
@@ -41,6 +42,8 @@ The query would:
 <br>
 
 # 2. Transaction Frequency Analysis
+
+![Q2](Images/Assessment_Q2.sql.png)
 ### Query Explanation:
 #### Monthly Transactions Calculation:
 The first CTE (monthly_transactions) breaks down transactions by customer and month
@@ -67,7 +70,7 @@ The query directly addresses the business requirement by segmenting customers ba
 <br>
 
 # 3. Account Inactivity Alert
-
+![Q3](Images/Assessment_Q3.sql.png)
 ### Core Purpose Match:
 <li>The query directly addresses the ops team's need to identify inactive accounts</li> 
 <li>It specifically looks for accounts with no transactions for over 365 days</li>
@@ -104,7 +107,7 @@ The query effectively translates the business requirement into a technical solut
 <br>
 
 # 4. Customer Lifetime Value (CLV) Estimation
-
+![Q4](Images/Assessment_Q4.sql.png)
 For a customer like John Doe (ID 1001) who joined 24 months ago and has made 120 transactions:
 If his average transaction amount is $1000, the profit per transaction would be $1 (0.1%)
 
