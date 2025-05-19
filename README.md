@@ -1,5 +1,10 @@
 # DataAnalytics-Assessment
 Cowry Data Analytics Assessment
+<br>
+# ISSUE WITH THE DATABASE.
+Loading the dataset into MySQL proved to be quite challenging due to various errors that arose when attempting to import each table. One notable issue occurred with the 'customerusers' table, specifically concerning the 'email' column. The database schema had a constraint that required the values in this column to be unique. However, as I started inserting the data, I discovered that there were duplicates present in the field e.g.'chinonso+444@gmail.com' as a value that conflicted with this constraint.
+
+To resolve this issue, I made the decision to alter the 'email' column in the 'customerusers' table. I removed the unique constraint to allow for the insertion of all values without triggering errors related to duplication. This adjustment enabled the data to be loaded successfully into the table, allowing me to proceed with my project without further interruptions.
 
 # 1. High-Value Customers with Multiple Products
 ![Q1](Images/Assessment_Q1.sql.png)
